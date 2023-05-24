@@ -1,21 +1,29 @@
 import { Injectable } from "@angular/core";
 import { Product } from "../interfaces/product";
-import { Observable, of } from "rxjs";
-import * as productsData from '../../../assets/data/products.json';
+import { Observable, delay, of } from "rxjs";
+import productsData from '../../../assets/data/products.json';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
 
-  getProducts(): Observable<Product[]> {
-    return of(productsData);
+  private _products: Product[] = productsData.products;
+
+  searchProductsByName(query: string): Observable<Product[]> {
+    const filteredProducts = this._products
+      .filter(product => product.name.toLowerCase().includes(query.toLowerCase()));
+    return of(filteredProducts || []).pipe(
+      delay(1000)
+    );
   }
 
-  searchProductById(id: number): Observable<Product | null> {
-    const products = productsData as Product[];
-    const product = products.find( (product: Product) => product.id === id );
-    return of(product || null);
+  getProductById(id: number): Observable<Product | null> {
+    const product = this._products
+      .find(product => product.id === id);
+    return of(product || null).pipe(
+      delay(500)
+    );
   }
 
 }
