@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class ProductCatalogPageComponent {
 
   public products: Product[] = [];
+  public isBusy: boolean = false;
 
   constructor(
     private router: Router,
@@ -20,10 +21,12 @@ export class ProductCatalogPageComponent {
   }
 
   searchByName(query: string): void {
+    this.isBusy = true;
     this.productService
       .searchProductsByName(query)
       .subscribe(products => {
         this.products = products;
+        this.isBusy = false;
       });
   }
 

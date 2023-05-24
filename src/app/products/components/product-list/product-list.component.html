@@ -5,7 +5,13 @@
   <p class="text-muted">No se encontraron productos</p>
 </ng-template>
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div *ngIf="isLoading" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+  <div *ngFor="let i of emptyProducts" class="col">
+    <app-product-card [isLoading]="true" />
+  </div>
+</div>
+
+<div *ngIf="!isLoading" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
   <div *ngFor="let product of products" class="col">
     <app-product-card [product]="product" (onClickProduct)="handleClickProduct($event)" />
   </div>

@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Subject, debounceTime } from 'rxjs';
 
 @Component({
-  selector: 'app-search-bar',
+  selector: 'shared-search-bar',
   template: `
     <input
       type="text"

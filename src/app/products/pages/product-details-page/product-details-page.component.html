@@ -2,8 +2,12 @@
 
 <hr>
 
-<div class="row">
-  <div class="col-md-4">
+<div *ngIf="isBusy" class="mt-4">
+  <shared-loading-spinner />
+</div>
+
+<div *ngIf="!isBusy" class="row">
+  <div class="col-md-4 d-flex justify-content-center">
     <img [src]="product?.image" class="img-fluid" alt="product?.name">
   </div>
   <div class="col-md-6">
@@ -20,7 +24,7 @@
         {{ category }}
       </span>
     </div>
-    <app-button label='Regresar' [primary]="false" (onClick)="goBack()" />
+    <shared-button label='Regresar' [primary]="false" (onClick)="goBack()" />
   </div>
 </div>
 

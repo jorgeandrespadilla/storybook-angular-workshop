@@ -8,13 +8,16 @@ import { Product } from '../../interfaces/product';
 export class ProductCardComponent {
 
   @Input()
-  public product!: Product;
+  public isLoading: boolean = false;
+
+  @Input()
+  public product?: Product;
 
   @Output()
   public onClickProduct = new EventEmitter<Product>();
 
   ngOnInit(): void {
-    if (!this.product) throw new Error('Product property is required');
+    if (!this.isLoading && !this.product) throw new Error('Product property is required');
   }
 
   handleClick(): void {

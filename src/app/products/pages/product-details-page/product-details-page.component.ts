@@ -9,6 +9,7 @@ import { ProductsService } from '../../services/products.service';
 })
 export class ProductDetailsPageComponent {
 
+  public isBusy: boolean = false;
   public product?: Product;
 
   constructor(
@@ -18,11 +19,13 @@ export class ProductDetailsPageComponent {
   ) { }
 
   ngOnInit() {
+    this.isBusy = true;
     this.activatedRoute.params
       .pipe(
         switchMap( ({ id }) => this.productsService.getProductById( Number(id) ) )
       )
       .subscribe( product => {
+        this.isBusy = false;
         if ( !product ) {
           return this.router.navigateByUrl('');
         }

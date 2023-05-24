@@ -7,7 +7,7 @@ const classesBySize = {
 };
 
 @Component({
-  selector: 'app-button',
+  selector: 'shared-button',
   template: `
     <button
       type="button"
