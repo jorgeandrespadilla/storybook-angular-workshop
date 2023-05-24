@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Product } from '../../interfaces/product';
 
 @Component({
   selector: 'app-product-list',
@@ -6,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class ProductListComponent {
 
+  @Input()
+  public products: Product[] = [];
+
+  @Output()
+  public onViewDetails = new EventEmitter<Product>();
+
+  handleClickProduct(product: Product): void {
+    this.onViewDetails.emit(product);
+  }
 }
