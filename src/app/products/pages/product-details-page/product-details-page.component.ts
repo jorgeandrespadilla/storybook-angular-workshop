@@ -20,11 +20,18 @@ export class ProductDetailsPageComponent {
   ngOnInit() {
     this.activatedRoute.params
       .pipe(
-        switchMap( ({ id }) => this.productsService.searchProductById( Number(id) ) )
+        switchMap( ({ id }) => this.productsService.getProductById( Number(id) ) )
       )
       .subscribe( product => {
-        if ( !product ) return this.router.navigateByUrl('');
+        if ( !product ) {
+          return this.router.navigateByUrl('');
+        }
         return this.product = product;
       });
   }
+
+  goBack() {
+    this.router.navigateByUrl('../');
+  }
+
 }

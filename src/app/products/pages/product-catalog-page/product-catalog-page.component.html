@@ -1,1 +1,8 @@
-<p>product-catalog-page works!</p>
+<h2>Catálogo de Productos</h2>
+
+<hr>
+
+<div class="mb-3">
+  <app-search-bar placeholder="Buscar productos" (onSearch)="searchByName($event)" />
+</div>
+<app-product-list [products]="products" (onViewDetails)="handleViewDetails($event)" />

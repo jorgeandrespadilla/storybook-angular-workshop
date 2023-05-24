@@ -1,1 +1,26 @@
-<p>product-details-page works!</p>
+<h2>Detalle del producto</h2>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-4">
+    <img [src]="product?.image" class="img-fluid" alt="product?.name">
+  </div>
+  <div class="col-md-6">
+    <div>
+      <h3>{{ product?.name }}</h3>
+      <p>{{ product?.price | currency }}</p>
+    </div>
+    <p>{{ product?.description }}</p>
+    <div class="d-flex gap-1 mb-4">
+      <span
+        *ngFor="let category of product?.categories"
+        class="badge bg-primary"
+      >
+        {{ category }}
+      </span>
+    </div>
+    <app-button label='Regresar' [primary]="false" (onClick)="goBack()" />
+  </div>
+</div>
+
