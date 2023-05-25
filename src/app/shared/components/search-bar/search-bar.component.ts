@@ -16,13 +16,19 @@ import { Subject, debounceTime } from 'rxjs';
 })
 export class SearchBarComponent implements OnInit {
 
-  private debouncer = new Subject<string>();
-
+  /**
+   * Placeholder a mostrar en el campo de búsqueda
+   */
   @Input()
   public placeholder: string = '';
 
+  /**
+   * Evento que se emite cuando se escribe en el campo de búsqueda
+   */
   @Output()
   public onSearch = new EventEmitter<string>();
+
+  private debouncer = new Subject<string>();
 
   ngOnInit(): void {
     this.debouncer

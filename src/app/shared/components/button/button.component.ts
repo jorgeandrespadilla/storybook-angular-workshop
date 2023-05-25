@@ -20,15 +20,27 @@ const classesBySize = {
 })
 export class ButtonComponent {
 
+  /**
+   * Texto del botón
+   */
   @Input()
   label = '';
 
+  /**
+   * Indica si el botón es primario o no
+   */
   @Input()
   primary = true;
 
+  /**
+   * Tamaño del botón
+   */
   @Input()
   size: 'small' | 'medium' | 'large' = 'medium';
 
+  /**
+   * Evento que se emite cuando se hace click en el botón
+   */
   @Output()
   onClick = new EventEmitter<Event>();
 

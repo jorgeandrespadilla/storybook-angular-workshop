@@ -25,6 +25,9 @@ export class ProductListComponent {
   @Input()
   public products: Product[] = [];
 
+  /**
+   * Evento que se emite cuando se hace click en un producto
+   */
   @Output()
   public onViewDetails = new EventEmitter<Product>();
 
@@ -35,4 +38,5 @@ export class ProductListComponent {
   handleClickProduct(product: Product): void {
     this.onViewDetails.emit(product);
   }
+
 }

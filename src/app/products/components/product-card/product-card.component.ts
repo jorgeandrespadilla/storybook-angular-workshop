@@ -7,12 +7,21 @@ import { Product } from '../../interfaces/product';
 })
 export class ProductCardComponent {
 
+  /**
+   * Indica si se está cargando el producto
+   */
   @Input()
   public isLoading: boolean = false;
 
+  /**
+   * Producto a mostrar
+   */
   @Input()
   public product?: Product;
 
+  /**
+   * Evento que se emite cuando se hace click en el botón de ver detalles
+   */
   @Output()
   public onClickProduct = new EventEmitter<Product>();
 
