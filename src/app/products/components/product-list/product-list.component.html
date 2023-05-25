@@ -1,0 +1,18 @@
+<div *ngIf="products.length > 0; else noProducts">
+  <p class="text-muted">Se encontraron {{products.length}} productos</p>
+</div>
+<ng-template #noProducts>
+  <p class="text-muted">No se encontraron productos</p>
+</ng-template>
+
+<div *ngIf="isLoading" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+  <div *ngFor="let i of emptyProducts" class="col">
+    <app-product-card [isLoading]="true" />
+  </div>
+</div>
+
+<div *ngIf="!isLoading" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+  <div *ngFor="let product of products" class="col">
+    <app-product-card [product]="product" (onClickProduct)="handleClickProduct($event)" />
+  </div>
+</div>

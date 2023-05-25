@@ -1,27 +1,46 @@
-# StorybookAngularWorkshop
+# Storybook para Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+Este repositorio contiene el proyecto base para el taller de Storybook para Angular. En este taller, aprenderás los fundamentos Storybook, una herramienta de desarrollo que te permite crear y visualizar componentes de manera aislada, facilitando el proceso de desarrollo y pruebas en Angular.
 
-## Development server
+## Requisitos previos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Antes de comenzar con el taller, asegúrate de tener los siguientes requisitos previos instalados en tu sistema:
 
-## Code scaffolding
+- Node.js (versión 18 o superior)
+- Angular CLI (versión 15 o superior)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalación
 
-## Build
+Sigue los pasos a continuación para instalar y configurar el proyecto:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clona este repositorio en tu máquina local:
 
-## Running unit tests
+   ```
+   git clone https://github.com/jorgeandrespadilla/storybook-angular-workshop.git
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Navega al directorio del proyecto:
 
-## Running end-to-end tests
+   ```
+   cd storybook-angular-workshop
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Instala las dependencias del proyecto:
 
-## Further help
+   ```
+   npm install
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. Ejecuta el proyecto:
+
+   ```
+   npm start
+   ```
+
+## Recursos adicionales
+
+Para más información sobre Angular y Storybook, puedes consultar los siguientes recursos:
+
+- [Documentación oficial de Angular (en español)](https://docs.angular.lat/)
+- [Documentación oficial de Storybook para Angular (en inglés)](https://storybook.js.org/docs/angular/)
+- [Tutorial introductorio de Storybook para Angular (en español)](https://storybook.js.org/tutorials/intro-to-storybook/angular/es/get-started/)

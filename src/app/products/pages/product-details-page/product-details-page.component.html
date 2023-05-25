@@ -1,0 +1,30 @@
+<h2>Detalle del producto</h2>
+
+<hr>
+
+<div *ngIf="isBusy" class="mt-4">
+  <shared-loading-spinner />
+</div>
+
+<div *ngIf="!isBusy" class="row">
+  <div class="col-md-4 d-flex justify-content-center">
+    <img [src]="product?.image" class="img-fluid" alt="product?.name">
+  </div>
+  <div class="col-md-6">
+    <div>
+      <h3>{{ product?.name }}</h3>
+      <p>{{ product?.price | currency }}</p>
+    </div>
+    <p>{{ product?.description }}</p>
+    <div class="d-flex gap-1 mb-4">
+      <span
+        *ngFor="let category of product?.categories"
+        class="badge bg-primary"
+      >
+        {{ category }}
+      </span>
+    </div>
+    <shared-button label='Regresar' [primary]="false" (onClick)="goBack()" />
+  </div>
+</div>
+

@@ -1,0 +1,268 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 13",
+      "description": "Smartphone con pantalla de 6.1 pulgadas, procesador A15 Bionic y 5G.",
+      "price": 1099,
+      "image": "https://picsum.photos/seed/1/400/300",
+      "categories": [
+        "smartphones",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S21",
+      "description": "Smartphone Android con pantalla de 6.2 pulgadas, procesador Exynos 2100 y 5G.",
+      "price": 999,
+      "image": "https://picsum.photos/seed/2/400/300",
+      "categories": [
+        "smartphones",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "MacBook Pro M1",
+      "description": "Portátil de 13 pulgadas con procesador Apple M1 y macOS Monterey.",
+      "price": 1299,
+      "image": "https://picsum.photos/seed/3/400/300",
+      "categories": [
+        "portátiles",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dell XPS 13",
+      "description": "Portátil de 13 pulgadas con procesador Intel Core i7 y Windows 11.",
+      "price": 1399,
+      "image": "https://picsum.photos/seed/44/400/300",
+      "categories": [
+        "portátiles",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Sony PlayStation 5",
+      "description": "Consola de videojuegos de última generación con GPU RDNA 2 y almacenamiento SSD.",
+      "price": 499,
+      "image": "https://picsum.photos/seed/5/400/300",
+      "categories": [
+        "consolas",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Xbox Series X",
+      "description": "Consola de videojuegos de última generación con GPU RDNA 2 y almacenamiento SSD.",
+      "price": 499,
+      "image": "https://picsum.photos/seed/6/400/300",
+      "categories": [
+        "consolas",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Nintendo Switch",
+      "description": "Consola de videojuegos híbrida que se puede utilizar como portátil o conectada al televisor.",
+      "price": 299,
+      "image": "https://picsum.photos/seed/77/400/300",
+      "categories": [
+        "consolas",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "iPad Pro M1",
+      "description": "Tablet de 12,9 pulgadas con procesador Apple M1 y sistema operativo iPadOS.",
+      "price": 1099,
+      "image": "https://picsum.photos/seed/8/400/300",
+      "categories": [
+        "tablets",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Samsung Galaxy Tab S7",
+      "description": "Tablet de 11 pulgadas con procesador Snapdragon 865+ y sistema operativo Android.",
+      "price": 699,
+      "image": "https://picsum.photos/seed/9/400/300",
+      "categories": [
+        "tablets",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Apple Watch Series 7",
+      "description": "Smartwatch con pantalla de 1,78 pulgadas, procesador S7 y sistema operativo watchOS.",
+      "price": 399,
+      "image": "https://picsum.photos/seed/10/400/300",
+      "categories": [
+        "smartwatches",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Samsung Galaxy Watch 4",
+      "description": "Smartwatch con pantalla de 1,4 pulgadas, procesador Exynos W920 y sistema operativo Wear OS.",
+      "price": 349,
+      "image": "https://picsum.photos/seed/11/400/300",
+      "categories": [
+        "smartwatches",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Amazon Echo 4ª generación",
+      "description": "Altavoz inteligente con asistente de voz Alexa.",
+      "price": 99,
+      "image": "https://picsum.photos/seed/12/400/300",
+      "categories": [
+        "hogar inteligente",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Google Nest Hub 2ª generación",
+      "description": "Pantalla inteligente con asistente de voz Google Assistant.",
+      "price": 99,
+      "image": "https://picsum.photos/seed/13/400/300",
+      "categories": [
+        "hogar inteligente",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Apple AirPods Pro",
+      "description": "Auriculares inalámbricos con cancelación de ruido activa y estuche de carga.",
+      "price": 249,
+      "image": "https://picsum.photos/seed/14/400/300",
+      "categories": [
+        "auriculares",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Sony WH-1000XM4",
+      "description": "Auriculares inalámbricos con cancelación de ruido y batería de larga duración.",
+      "price": 349,
+      "image": "https://picsum.photos/seed/15/400/300",
+      "categories": [
+        "auriculares",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Fitbit Versa 3",
+      "description": "Smartwatch deportivo con monitor de actividad física y GPS integrado.",
+      "price": 229,
+      "image": "https://picsum.photos/seed/16/400/300",
+      "categories": [
+        "smartwatches",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "DJI Mavic Air 2",
+      "description": "Drone con cámara de 48 MP, estabilizador en 3 ejes y autonomía de vuelo de 34 minutos.",
+      "price": 799,
+      "image": "https://picsum.photos/seed/17/400/300",
+      "categories": [
+        "drones",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Canon EOS M50 Mark II",
+      "description": "Cámara sin espejo de formato APS-C, sensor de 24,1 MP y grabación de vídeo 4K.",
+      "price": 699,
+      "image": "https://picsum.photos/seed/118/400/300",
+      "categories": [
+        "cámaras",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "GoPro HERO10 Black",
+      "description": "Cámara de acción con grabación de vídeo 5,3K, estabilización HyperSmooth 4.0 y pantalla frontal.",
+      "price": 499,
+      "image": "https://picsum.photos/seed/19/400/300",
+      "categories": [
+        "cámaras",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Logitech MX Master 3",
+      "description": "Ratón inalámbrico ergonómico con rueda de desplazamiento MagSpeed y personalización de botones.",
+      "price": 99,
+      "image": "https://picsum.photos/seed/20/400/300",
+      "categories": [
+        "periféricos",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Microsoft Surface Laptop 4",
+      "description": "Portátil de 13,5 pulgadas con procesador Intel Core i5 y Windows 11.",
+      "price": 999,
+      "image": "https://picsum.photos/seed/21/400/300",
+      "categories": [
+        "portátiles",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Oculus Quest 2",
+      "description": "Gafas de realidad virtual todo en uno con seguimiento de 6 grados y controles táctiles.",
+      "price": 299,
+      "image": "https://picsum.photos/seed/22/400/300",
+      "categories": [
+        "realidad virtual",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Sonos Beam",
+      "description": "Barra de sonido inteligente con control de voz y compatibilidad con Dolby Atmos.",
+      "price": 399,
+      "image": "https://picsum.photos/seed/23/400/300",
+      "categories": [
+        "audio",
+        "tecnología"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "NVIDIA GeForce RTX 3080",
+      "description": "Tarjeta gráfica para juegos con arquitectura Ampere, 10 GB de memoria GDDR6X y ray tracing en tiempo real.",
+      "price": 699,
+      "image": "https://picsum.photos/seed/24/400/300",
+      "categories": [
+        "hardware",
+        "tecnología"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<h2>Catálogo de Productos</h2>
+
+<hr>
+
+<div class="mb-3">
+  <shared-search-bar placeholder="Buscar productos" (onSearch)="searchByName($event)" />
+</div>
+<app-product-list [isLoading]="isBusy" [products]="products" (onViewDetails)="handleViewDetails($event)" />
