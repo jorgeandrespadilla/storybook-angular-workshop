@@ -1,0 +1,19 @@
+import { Meta, Canvas } from '@storybook/blocks';
+import * as ProductCardStories from './product-card.component.stories';
+
+<Meta of={ProductCardStories} />
+
+# Tarjeta de producto
+
+La tarjeta de producto muestra un producto en una lista de productos.
+
+## Ejemplos
+
+### Por defecto
+
+<Canvas of={ProductCardStories.Default} />
+
+### Cargando
+
+<Canvas of={ProductCardStories.Loading} />
+
